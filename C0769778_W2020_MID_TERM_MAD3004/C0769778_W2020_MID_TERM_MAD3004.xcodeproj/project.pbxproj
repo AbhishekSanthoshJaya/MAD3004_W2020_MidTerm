@@ -12,6 +12,7 @@
 		9BF0E0AE23F60B7F004B6122 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0AD23F60B7F004B6122 /* Internet.swift */; };
 		9BF0E0B023F60BC2004B6122 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0AF23F60BC2004B6122 /* Bill.swift */; };
 		9BF0E0B223F60C93004B6122 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0B123F60C93004B6122 /* Hydro.swift */; };
+		9BF0E0B423F60D07004B6122 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0B323F60D07004B6122 /* Mobile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		9BF0E0AD23F60B7F004B6122 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9BF0E0AF23F60BC2004B6122 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9BF0E0B123F60C93004B6122 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9BF0E0B323F60D07004B6122 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				9B289BD923F609D00008FD4D /* IDisplay.swift */,
 				9BF0E0AD23F60B7F004B6122 /* Internet.swift */,
 				9BF0E0B123F60C93004B6122 /* Hydro.swift */,
+				9BF0E0B323F60D07004B6122 /* Mobile.swift */,
 				9BF0E0AF23F60BC2004B6122 /* Bill.swift */,
 			);
 			path = C0769778_W2020_MID_TERM_MAD3004;
@@ -135,6 +138,7 @@
 				9BF0E0B223F60C93004B6122 /* Hydro.swift in Sources */,
 				9BF0E0B023F60BC2004B6122 /* Bill.swift in Sources */,
 				9BF0E0AE23F60B7F004B6122 /* Internet.swift in Sources */,
+				9BF0E0B423F60D07004B6122 /* Mobile.swift in Sources */,
 				9B289BDA23F609D00008FD4D /* IDisplay.swift in Sources */,
 				9B289BD323F609A40008FD4D /* main.swift in Sources */,
 			);
