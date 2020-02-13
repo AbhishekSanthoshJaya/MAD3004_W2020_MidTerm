@@ -5,5 +5,19 @@
 //  Created by MacStudent on 2020-02-13.
 //  Copyright © 2020 com.lambton. All rights reserved.
 //
+import Foundation
 
+public class Internet: Bill
+  {
+  private var providerName: String
+  private var gbUsed: Int
 
+init(billId: String, billDate: Date, billType: BillType, providerName:String, gbUsed: Int)
+  {
+    super.init(billId: billId, billDate: billDate, billType: billType)
+    self.providerName = providerName
+    self.gbUsed = gbUsed
+        
+  }
+
+}
