@@ -14,6 +14,7 @@
 		9BF0E0B223F60C93004B6122 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0B123F60C93004B6122 /* Hydro.swift */; };
 		9BF0E0B423F60D07004B6122 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0B323F60D07004B6122 /* Mobile.swift */; };
 		9BF0E0B623F60E05004B6122 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0B523F60E05004B6122 /* Customer.swift */; };
+		9BF0E0B823F60E44004B6122 /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0E0B723F60E44004B6122 /* Insurance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		9BF0E0B123F60C93004B6122 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9BF0E0B323F60D07004B6122 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9BF0E0B523F60E05004B6122 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BF0E0B723F60E44004B6122 /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				9BF0E0B123F60C93004B6122 /* Hydro.swift */,
 				9BF0E0B323F60D07004B6122 /* Mobile.swift */,
 				9BF0E0B523F60E05004B6122 /* Customer.swift */,
+				9BF0E0B723F60E44004B6122 /* Insurance.swift */,
 				9BF0E0AF23F60BC2004B6122 /* Bill.swift */,
 			);
 			path = C0769778_W2020_MID_TERM_MAD3004;
@@ -140,6 +143,7 @@
 			files = (
 				9BF0E0B223F60C93004B6122 /* Hydro.swift in Sources */,
 				9BF0E0B623F60E05004B6122 /* Customer.swift in Sources */,
+				9BF0E0B823F60E44004B6122 /* Insurance.swift in Sources */,
 				9BF0E0B023F60BC2004B6122 /* Bill.swift in Sources */,
 				9BF0E0AE23F60B7F004B6122 /* Internet.swift in Sources */,
 				9BF0E0B423F60D07004B6122 /* Mobile.swift in Sources */,
