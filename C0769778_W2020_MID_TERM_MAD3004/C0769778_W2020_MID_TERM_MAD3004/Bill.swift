@@ -12,18 +12,20 @@ enum BillType {
     case MOBILE, INTERNET, HYDRO
 }
 
-public class Bill: IDisplayDelegate
-{
-    func display() {
-        <#code#>
-    }
+public class Bill
     
+{
+//
+//    func display() {
+//
+//    }
+//
     
 
   private var billId: String
   private var billDate: Date
   private var billType: BillType
-  private var billTotal: Float
+  //private var billTotal: Float
 
 
 init(billId: String, billDate: Date, billType: BillType)
@@ -31,12 +33,13 @@ init(billId: String, billDate: Date, billType: BillType)
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-        self.calcTotalBill(billType: <#T##BillType#>)
+        //self.billTotal = calcTotalBill()
+      //  self.calcTotalBill()
   }
 
-  func calcTotalBill(billType: BillType) -> Float
-  {
-//Function to calculate total bill based on type, could be in customer
-  }
+//  func calcTotalBill() -> Float
+//  {
+////Function to calculate total bill based on type, could be in customer
+//  }
 
 }

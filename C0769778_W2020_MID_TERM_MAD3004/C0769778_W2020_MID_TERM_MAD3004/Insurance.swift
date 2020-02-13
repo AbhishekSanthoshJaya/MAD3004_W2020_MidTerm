@@ -8,7 +8,8 @@
 
 import Foundation
 
-public class Insurance: IDisplayDelegate
+public class Insurance
+    
 {
     
   private var insuranceProviderName: String
@@ -24,11 +25,12 @@ init(insuranceProviderName: String, typeofInsurance: String, startDate: Date, en
         self.typeofInsurance = typeofInsurance
         self.startDate = startDate
         self.endDate = endDate
-    self.totalDays = calcTotalDays(startDate: <#T##Date#>, endDate: <#T##Date#>)
+        self.totalDays = calcTotalDays()
   }
-func calcTotalDays(startDate: Date, endDate:Date) -> Int
+    
+func calcTotalDays() -> Int
   {
-return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
+    return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
   }
 
 }

@@ -8,8 +8,9 @@
 
 import Foundation
 
-public class Customer: IDisplayDelegate
+public class Customer
 {
+    
   private var customerId: String
   private var firstName: String
   private var lastName: String
