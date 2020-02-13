@@ -13,8 +13,13 @@ enum BillType {
 }
 
 public class Bill: IDisplayDelegate
+{
+    func display() {
+        <#code#>
+    }
+    
+    
 
-  {
   private var billId: String
   private var billDate: Date
   private var billType: BillType

@@ -10,6 +10,7 @@ import Foundation
 
 public class Insurance: IDisplayDelegate
 {
+    
   private var insuranceProviderName: String
   private var typeofInsurance: String
   private var startDate: Date
