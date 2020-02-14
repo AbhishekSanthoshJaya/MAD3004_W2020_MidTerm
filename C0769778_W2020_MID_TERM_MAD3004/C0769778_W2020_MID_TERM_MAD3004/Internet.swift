@@ -10,13 +10,23 @@ import Foundation
 public class Internet: Bill
   {
   private var providerName: String
-  private var gbUsed: Int
+  private var gbUsed: Double
 
-init(billId: String, billDate: Date, billType: BillType, providerName:String, gbUsed: Int)
+init(billId: String, billDate: Date, billType: BillType, providerName:String, gbUsed: Double)
   {
     self.providerName = providerName
     self.gbUsed = gbUsed
     super.init(billId: billId, billDate: billDate, billType: billType)
   }
-
+    
+    func billCalculate() -> Double{
+           var billAmount = 0.0
+        if( gbUsed < 10){
+            billAmount = 3 * gbUsed
+        }
+        else {
+            billAmount = 3.5 * gbUsed
+        }
+           return billAmount
+       }
 }
