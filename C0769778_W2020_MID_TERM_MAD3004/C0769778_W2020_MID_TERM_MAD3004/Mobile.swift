@@ -15,8 +15,13 @@ public class Mobile: Bill
   private var mobileNumber: String
   private var mobGbUsed: Int
   private var minute: Int
+  private var mobileBill: Double
+  {
+    return billCalculate()
+  }
 
-init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int)
+
+    init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int, mobileBill: Double)
 {
     self.manufacturerName = manufacturerName
     self.planName = planName
@@ -26,5 +31,20 @@ init(billId: String, billDate: Date, billType: BillType, manufacturerName: Strin
     super.init(billId: billId, billDate: billDate, billType: billType)
   }
 
+//Method to get total Mobile bill
+    
+    func billCalculate() -> Double{
+        var billAmount = 0.0
+        billAmount = (Double(self.mobGbUsed) * 25) + (Double(self.minute) * 0.2)
+        return billAmount
+    }
+    
+  override func display() {
+        print("Manufacturer Name: \(manufacturerName)")
+        print("Manufacturer Name: \(manufacturerName)")
+    
+    }
   //Methods to validate mobilenumber, maybe in customer
 }
+
+

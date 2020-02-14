@@ -12,8 +12,14 @@ enum BillType {
     case MOBILE, INTERNET, HYDRO
 }
 
-public class Bill
-    {
+public class Bill: IDisplayDelegate
+    
+{
+    func display() {
+        let obj = Bill(billId: billId, billDate: billDate, billType: billType)
+        dump(obj)
+    }
+    
   private var billId: String
   private var billDate: Date
   private var billType: BillType

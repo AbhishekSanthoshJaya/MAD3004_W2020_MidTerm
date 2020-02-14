@@ -10,4 +10,4 @@ import Foundation
 
 var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com", bills: ["INT00" : 200])
 
-dump(c1)
+
