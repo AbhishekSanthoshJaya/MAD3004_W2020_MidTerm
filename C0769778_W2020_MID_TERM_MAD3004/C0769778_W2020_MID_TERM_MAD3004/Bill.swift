@@ -15,12 +15,6 @@ enum BillType {
 public class Bill: IDisplayDelegate
     
 {
-    func display() {
-       print("Bill ID: \(billId)")
-       print("Bill Date: \(billDate)")
-       print("Bill Type: \(billType)")
-    }
-    
   private var billId: String
   private var billDate: Date
   private var billType: BillType
@@ -33,7 +27,12 @@ init(billId: String, billDate: Date, billType: BillType)
     self.billType = billType
     self.billDate = billDate
     }
-    
+
+func display() {
+       print("Bill ID: \(billId)")
+       print("Bill Date: \(billDate)")
+       print("Bill Type: \(billType)")
+    }
     
 
 //  func calcTotalBill() -> Float

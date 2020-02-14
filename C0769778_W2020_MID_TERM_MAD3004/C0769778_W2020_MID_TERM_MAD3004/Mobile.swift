@@ -25,6 +25,7 @@ public class Mobile: Bill
     }
     else{
       print("Mobile number not valid")
+        exit(0)
     }
     self.mobGbUsed = mobGbUsed
     self.minute = minute

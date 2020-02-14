@@ -15,9 +15,6 @@ var m2 = Mobile(billId: "MB300", billDate: NSDate() as Date, billType: BillType.
 
 var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com", bills: ["INT00" : 200])
 
-c1.display()
-m1.display()
-
 var billArray = Array<Bill>()
 billArray.append(m1)
 billArray.append(m2)
