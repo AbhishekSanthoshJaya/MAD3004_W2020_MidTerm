@@ -26,12 +26,13 @@ public class Insurance
         self.startDate = startDate
         self.endDate = endDate
         self.totalInsuranceAmount = totalInsuranceAmount
-       // self.totalDays = calcTotalDays()
+       // totalDays = calcTotalDays()
   }
     
-//func calcTotalDays() -> Int
-//  {
-//    return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
-//  }
+func calcTotalDays() -> Int
+{
+ return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
+}
+
 
 }

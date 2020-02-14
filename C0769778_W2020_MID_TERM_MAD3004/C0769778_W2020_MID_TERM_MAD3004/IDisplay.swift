@@ -8,7 +8,7 @@
 
 import Foundation
 
-//protocol containing the display method
+//Protocol containing the display method
 
 protocol IDisplayDelegate
 {

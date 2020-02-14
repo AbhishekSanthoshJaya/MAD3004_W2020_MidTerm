@@ -11,7 +11,7 @@ import Foundation
 public class Customer: IDisplayDelegate
 {
     
-  var customerId: String
+  private var customerId: String
   private var firstName: String
   private var lastName: String
   private var fullName: String
