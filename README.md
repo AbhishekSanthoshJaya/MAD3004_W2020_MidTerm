@@ -18,3 +18,4 @@ Mid term test: A program that calculates the total bills of a customer. A bill c
 ## REFERENCES
 
 * [iOSTutorialJunction](https://iostutorialjunction.com/2019/09/get-number-of-days-between-two-dates-swift.html) - Used in days between calculation of insurance class.
+* [Stackoverflow]https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift) - Used in email verification
