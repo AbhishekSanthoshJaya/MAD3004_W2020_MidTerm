@@ -21,14 +21,17 @@ var in1 = Internet(billId: "IN167", billDate: NSDate() as Date, billType: BillTy
 var in2 = Internet(billId: "IN122", billDate: NSDate() as Date, billType: BillType.INTERNET, providerName: "STARLIGHT", gbUsed: 6.2)
 
 //Customer Objects
-var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com")
+var c1 = Customer(customerId: "ABHI200", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com")
 var c2 = Customer(customerId: "PEAKY100", firstName: "Thomas", lastName: "Shelby", emailId: "thomas@gmail.com")
 
 //var billArray = Array<Bill>()
 //billArray.insert(m1, at: 0)
+
 c1.newBill(bill: h2, customerId: "ABHI200")
 c2.newBill(bill: h1, customerId: "PEAKY100")
 c1.display()
+
+c2.removeBill(bill: h1)
 
 print("***************************************************************************************************")
 

@@ -33,7 +33,6 @@ public class Mobile: Bill
   }
 
 //Method to get total Mobile bill
-    
     func billCalculate() -> Double{
         var billAmount = 0.0
         billAmount = (Double(self.mobGbUsed) * 25) + (Double(self.minute) * 0.2)

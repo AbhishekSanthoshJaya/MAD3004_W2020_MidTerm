@@ -33,8 +33,8 @@ public class Customer: IDisplayDelegate
         }
           else
         {
-          print("Please enter a valid email address")
-            exit(0)
+          print("Email address is invalid")
+          exit(0)
         }
   }
     
@@ -42,6 +42,11 @@ public class Customer: IDisplayDelegate
     func newBill(bill: Bill, customerId: String)
     {
       customerBills.updateValue(bill, forKey: customerId)
+    }
+    
+    func removeBill(bill: Bill)
+    {
+        customerBills.removeValue(forKey: customerId)
     }
     
     //Method to validate Email address
