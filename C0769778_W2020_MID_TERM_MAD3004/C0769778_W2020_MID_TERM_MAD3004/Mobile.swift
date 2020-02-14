@@ -15,15 +15,17 @@ public class Mobile: Bill
   private var mobileNumber: String
   private var mobGbUsed: Int
   private var minute: Int
-  private var mobileBill: Double{
-        return billCalculate()
-    }
 
     init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int)
 {
     self.manufacturerName = manufacturerName
     self.planName = planName
+    if(mobileNumber.count == 10) {
     self.mobileNumber = mobileNumber
+    }
+    else{
+      print("Mobile number not valid")
+    }
     self.mobGbUsed = mobGbUsed
     self.minute = minute
     super.init(billId: billId, billDate: billDate, billType: billType)
