@@ -40,6 +40,11 @@ public class Customer: IDisplayDelegate
         print("Name: \(fullName)")
         print("Email ID: \(emailId)")
         print("---- Bill Information ----")
+        for i in customerBills
+        {
+          i.value.display()
+        }
+        //
     }
 
 }
