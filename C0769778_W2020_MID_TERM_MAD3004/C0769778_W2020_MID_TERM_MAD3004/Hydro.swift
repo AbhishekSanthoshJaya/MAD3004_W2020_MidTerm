@@ -18,6 +18,6 @@ init(billId: String, billDate: Date, billType: BillType, agencyName:String, unit
     super.init(billId: billId, billDate: billDate, billType: billType)
     self.agencyName = agencyName
     self.unitsUsed = unitsUsed
-        
   }
+    
 }
