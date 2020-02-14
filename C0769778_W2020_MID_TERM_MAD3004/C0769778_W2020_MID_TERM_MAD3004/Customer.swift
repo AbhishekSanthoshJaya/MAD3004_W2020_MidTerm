@@ -8,8 +8,12 @@
 
 import Foundation
 
-public class Customer
+public class Customer: IDisplayDelegate
 {
+    func display() {
+        print(c1)
+    }
+    
     
   private var customerId: String
   private var firstName: String
@@ -20,7 +24,7 @@ public class Customer
     }
   private var emailId: String
   private var bills = [String: Float]()
-  private var totalAmount: Float
+  private var totalAmount: Float = 0
 
 init(customerId: String, firstName: String, lastName: String, emailId: String, bills: [String:Float])
   {
@@ -28,6 +32,7 @@ init(customerId: String, firstName: String, lastName: String, emailId: String, b
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
+        self.bills = bills
   }
 
 }

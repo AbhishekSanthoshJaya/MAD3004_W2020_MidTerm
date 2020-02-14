@@ -13,15 +13,7 @@ enum BillType {
 }
 
 public class Bill
-    
-{
-//
-//    func display() {
-//
-//    }
-//
-    
-
+    {
   private var billId: String
   private var billDate: Date
   private var billType: BillType
@@ -29,13 +21,12 @@ public class Bill
 
 
 init(billId: String, billDate: Date, billType: BillType)
-  {
-        self.billId = billId
-        self.billDate = billDate
-        self.billType = billType
-        //self.billTotal = calcTotalBill()
-      //  self.calcTotalBill()
-  }
+    
+    {
+    self.billId = billId
+    self.billType = billType
+    self.billDate = billDate
+    }
 
 //  func calcTotalBill() -> Float
 //  {

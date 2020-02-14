@@ -16,21 +16,22 @@ public class Insurance
   private var typeofInsurance: String
   private var startDate: Date
   private var endDate: Date
-  private var totalDays: Int
-  private var totalInsuranceAmount: Float
+  //private var totalDays: Int
+  private var totalInsuranceAmount: Double
 
-init(insuranceProviderName: String, typeofInsurance: String, startDate: Date, endDate: Date)
+    init(insuranceProviderName: String, typeofInsurance: String, startDate: Date, endDate: Date, totalInsuranceAmount: Double)
   {
         self.insuranceProviderName = insuranceProviderName
         self.typeofInsurance = typeofInsurance
         self.startDate = startDate
         self.endDate = endDate
-        self.totalDays = calcTotalDays()
+        self.totalInsuranceAmount = totalInsuranceAmount
+       // self.totalDays = calcTotalDays()
   }
     
-func calcTotalDays() -> Int
-  {
-    return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
-  }
+//func calcTotalDays() -> Int
+//  {
+//    return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
+//  }
 
 }

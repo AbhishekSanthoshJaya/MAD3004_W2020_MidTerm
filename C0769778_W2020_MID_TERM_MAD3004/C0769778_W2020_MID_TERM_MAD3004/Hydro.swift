@@ -10,8 +10,8 @@ import Foundation
 
 public class Hydro: Bill
   {
-  private var agencyName: String
-  private var unitsUsed: Int
+  private var agencyName: String = ""
+  private var unitsUsed: Int = 0
 
 init(billId: String, billDate: Date, billType: BillType, agencyName:String, unitsUsed: Int)
   {

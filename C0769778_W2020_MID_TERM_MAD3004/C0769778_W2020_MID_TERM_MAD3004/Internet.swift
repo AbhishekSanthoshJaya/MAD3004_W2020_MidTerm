@@ -14,10 +14,9 @@ public class Internet: Bill
 
 init(billId: String, billDate: Date, billType: BillType, providerName:String, gbUsed: Int)
   {
-    super.init(billId: billId, billDate: billDate, billType: billType)
     self.providerName = providerName
     self.gbUsed = gbUsed
-        
+    super.init(billId: billId, billDate: billDate, billType: billType)
   }
 
 }

@@ -17,13 +17,13 @@ public class Mobile: Bill
   private var minute: Int
 
 init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int)
-  {
-    super.init(billId: billId, billDate: billDate, billType: billType)
+{
     self.manufacturerName = manufacturerName
     self.planName = planName
     self.mobileNumber = mobileNumber
     self.mobGbUsed = mobGbUsed
     self.minute = minute
+    super.init(billId: billId, billDate: billDate, billType: billType)
   }
 
   //Methods to validate mobilenumber, maybe in customer
