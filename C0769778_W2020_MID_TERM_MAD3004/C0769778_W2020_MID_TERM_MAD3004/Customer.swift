@@ -18,7 +18,7 @@ public class Customer: IDisplayDelegate
     {
     return "\(firstName) \(lastName)"
     }
-  private var emailId: String = ""
+  private var emailId: String
   private var customerBills = [String: Bill]()
 
     init(customerId: String, firstName: String, lastName: String, emailId: String, bills: [String:Float])
@@ -26,6 +26,7 @@ public class Customer: IDisplayDelegate
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
+        self.emailId = emailId
         if isValidEmailAddress(emailAddressString: self.emailId)
         {
           self.emailId = emailId
@@ -33,6 +34,7 @@ public class Customer: IDisplayDelegate
           else
         {
           print("Please enter a valid email address")
+            exit(0)
         }
   }
     
