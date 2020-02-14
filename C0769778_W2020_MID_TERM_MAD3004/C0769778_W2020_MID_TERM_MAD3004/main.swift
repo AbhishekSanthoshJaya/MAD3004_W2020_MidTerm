@@ -13,13 +13,17 @@ var m1 = Mobile(billId: "MB200", billDate: NSDate() as Date, billType: BillType.
 
 var m2 = Mobile(billId: "MB300", billDate: NSDate() as Date, billType: BillType.MOBILE, manufacturerName: "CELLONE", planName: "5G4EVAAAA", mobileNumber: "9889890878", mobGbUsed: 2, minute: 11)
 
+var h1 = Hydro(billId: "HY219", billDate: NSDate() as Date, billType: BillType.HYDRO, agencyName: "WATAAAAA", unitsUsed: 22.21)
+var h2 = Hydro(billId: "HY199", billDate: NSDate() as Date, billType: BillType.HYDRO, agencyName: "MOREWATAAAAA", unitsUsed: 8.2)
+
 var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com", bills: ["INT00" : 200])
+
 
 var billArray = Array<Bill>()
 billArray.append(m1)
 billArray.append(m2)
 
-c1.newBill(bill: m1, customerId: "A98999")
+c1.newBill(bill: h2, customerId: "A98999")
 
 // func getCustomerById(customerId: String) -> Customer?
 // {
