@@ -11,14 +11,14 @@ import Foundation
 public class Customer: IDisplayDelegate
 {
     
-  private var customerId: String
+  var customerId: String
   private var firstName: String
   private var lastName: String
   private var fullName: String
     {
     return "\(firstName) \(lastName)"
     }
-  private var emailId: String
+  private var emailId: String = ""
   private var customerBills = [String: Bill]()
 
     init(customerId: String, firstName: String, lastName: String, emailId: String, bills: [String:Float])
@@ -26,8 +26,7 @@ public class Customer: IDisplayDelegate
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
-        self.emailId = emailId
-        if isValidEmail(self.emailId)
+        if isValidEmailAddress(emailAddressString: self.emailId)
         {
           self.emailId = emailId
         }
@@ -44,12 +43,28 @@ public class Customer: IDisplayDelegate
     }
     
     //Method to validate Email address
-       func isValidEmail(_ email: String) -> Bool {
-         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-         return emailPred.evaluate(with: email)
-     }
+       func isValidEmailAddress(emailAddressString: String) -> Bool {
+           
+           var returnValue = true
+           let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
+           
+           do {
+               let regex = try NSRegularExpression(pattern: emailRegEx)
+               let nsString = emailAddressString as NSString
+               let results = regex.matches(in: emailAddressString, range: NSRange(location: 0, length: nsString.length))
+               
+               if results.count == 0
+               {
+                   returnValue = false
+               }
+               
+           } catch let error as NSError {
+               print("invalid regex: \(error.localizedDescription)")
+               returnValue = false
+           }
+           
+           return  returnValue
+       }
     
     func display(){
         print("Customer ID: \(customerId)")

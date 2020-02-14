@@ -12,7 +12,7 @@ public class Mobile: Bill
   {
   private var manufacturerName: String
   private var planName: String
-  private var mobileNumber: String
+  private var mobileNumber: String = ""
   private var mobGbUsed: Int
   private var minute: Int
 
@@ -41,6 +41,7 @@ public class Mobile: Bill
     
   override func display() {
         super.display()
+        print("Bill Amount: \(billCalculate())")
         print("Manufacturer Name: \(manufacturerName)")
         print("Plan Name: \(planName)")
         print("MobileData Used: \(mobGbUsed)")
