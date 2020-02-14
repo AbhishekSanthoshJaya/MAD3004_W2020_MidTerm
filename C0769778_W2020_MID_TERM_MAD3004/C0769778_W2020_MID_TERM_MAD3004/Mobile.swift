@@ -43,9 +43,6 @@ public class Mobile: Bill
         print("Plan Name: \(planName)")
         print("MobileData Used: \(mobGbUsed)")
         print("Minute: \(minute)")
-        print("")
-        print("")
-    
     }
   //Methods to validate mobilenumber, maybe in customer
 }

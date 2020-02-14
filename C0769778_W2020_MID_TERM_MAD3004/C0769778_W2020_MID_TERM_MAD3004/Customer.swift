@@ -38,6 +38,7 @@ public class Customer: IDisplayDelegate
         print("Name: \(fullName)")
         print("Email ID: \(emailId)")
         print("---- Bill Information ----")
+        print())
         
         
     }
