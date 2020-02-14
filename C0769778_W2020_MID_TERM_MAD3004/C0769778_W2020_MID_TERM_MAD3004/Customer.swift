@@ -19,9 +19,7 @@ public class Customer: IDisplayDelegate
     return "\(firstName) \(lastName)"
     }
   private var emailId: String
-  private var bills = [String: Float]()
-  private var totalAmount: Float = 0
-  private var mobilebill: Mobile
+  private var customerBills = [String: Bill]()
 
     init(customerId: String, firstName: String, lastName: String, emailId: String, bills: [String:Float], mobileBill: Mobile)
   {
@@ -29,18 +27,19 @@ public class Customer: IDisplayDelegate
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
-        self.bills = bills
-        self.mobilebill = mobileBill
   }
+    
+    //Method to add a new bill to a customer
+    func newBill(bill: Bill, customerId: String)
+    {
+      customerBills.updateValue(bill, forKey: customerId)
+    }
     
     func display(){
         print("Customer ID: \(customerId)")
         print("Name: \(fullName)")
         print("Email ID: \(emailId)")
         print("---- Bill Information ----")
-        print())
-        
-        
     }
 
 }
