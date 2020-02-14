@@ -8,8 +8,10 @@
 
 import Foundation
 
-var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com", bills: ["INT00" : 200])
 
 var m1 = Mobile(billId: "MB200", billDate: NSDate() as Date, billType: BillType.MOBILE, manufacturerName: "FIDO", planName: "Student Plan", mobileNumber: "9809890878", mobGbUsed: 1, minute: 6)
 
+var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com", bills: ["INT00" : 200], mobileBill: m1)
+
+c1.display()
 m1.display()

@@ -16,8 +16,9 @@ public class Bill: IDisplayDelegate
     
 {
     func display() {
-        let obj = Bill(billId: billId, billDate: billDate, billType: billType)
-        dump(obj)
+       print("Bill ID: \(billId)")
+       print("Bill Date: \(billDate)")
+       print("Bill Type: \(billType)")
     }
     
   private var billId: String
@@ -27,12 +28,13 @@ public class Bill: IDisplayDelegate
 
 
 init(billId: String, billDate: Date, billType: BillType)
-    
     {
     self.billId = billId
     self.billType = billType
     self.billDate = billDate
     }
+    
+    
 
 //  func calcTotalBill() -> Float
 //  {

@@ -73,10 +73,10 @@
 			children = (
 				9B289BD223F609A40008FD4D /* main.swift */,
 				9B289BD923F609D00008FD4D /* IDisplay.swift */,
+				9BF0E0B523F60E05004B6122 /* Customer.swift */,
 				9BF0E0AD23F60B7F004B6122 /* Internet.swift */,
 				9BF0E0B123F60C93004B6122 /* Hydro.swift */,
 				9BF0E0B323F60D07004B6122 /* Mobile.swift */,
-				9BF0E0B523F60E05004B6122 /* Customer.swift */,
 				9BF0E0B723F60E44004B6122 /* Insurance.swift */,
 				9BF0E0AF23F60BC2004B6122 /* Bill.swift */,
 			);

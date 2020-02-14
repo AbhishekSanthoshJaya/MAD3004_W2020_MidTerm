@@ -19,7 +19,6 @@ public class Mobile: Bill
         return billCalculate()
     }
 
-
     init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int)
 {
     self.manufacturerName = manufacturerName
@@ -39,11 +38,13 @@ public class Mobile: Bill
     }
     
   override func display() {
+        super.display()
         print("Manufacturer Name: \(manufacturerName)")
         print("Plan Name: \(planName)")
-        print("Mobile Number: \(mobileNumber)")
+        print("MobileData Used: \(mobGbUsed)")
         print("Minute: \(minute)")
-        print("Mobile Bill: \(mobileBill)")
+        print("")
+        print("")
     
     }
   //Methods to validate mobilenumber, maybe in customer
