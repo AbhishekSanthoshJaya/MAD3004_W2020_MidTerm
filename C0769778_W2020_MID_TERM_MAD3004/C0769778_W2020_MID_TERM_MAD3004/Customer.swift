@@ -21,7 +21,7 @@ public class Customer: IDisplayDelegate
   private var emailId: String
   private var customerBills = [String: Bill]()
 
-    init(customerId: String, firstName: String, lastName: String, emailId: String, bills: [String:Float])
+    init(customerId: String, firstName: String, lastName: String, emailId: String)
   {
         self.customerId = customerId
         self.firstName = firstName

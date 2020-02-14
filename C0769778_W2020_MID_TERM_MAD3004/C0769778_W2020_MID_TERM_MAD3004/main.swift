@@ -16,7 +16,7 @@ var m2 = Mobile(billId: "MB300", billDate: NSDate() as Date, billType: BillType.
 var h1 = Hydro(billId: "HY219", billDate: NSDate() as Date, billType: BillType.HYDRO, agencyName: "WATAAAAA", unitsUsed: 22.21)
 var h2 = Hydro(billId: "HY199", billDate: NSDate() as Date, billType: BillType.HYDRO, agencyName: "MOREWATAAAAA", unitsUsed: 8.2)
 
-var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com", bills: ["INT00" : 200])
+var c1 = Customer(customerId: "A98999", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com")
 
 
 var billArray = Array<Bill>()
