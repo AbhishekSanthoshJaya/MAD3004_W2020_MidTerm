@@ -15,13 +15,12 @@ public class Mobile: Bill
   private var mobileNumber: String
   private var mobGbUsed: Int
   private var minute: Int
-  private var mobileBill: Double
-  {
-    return billCalculate()
-  }
+  private var mobileBill: Double{
+        return billCalculate()
+    }
 
 
-    init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int, mobileBill: Double)
+    init(billId: String, billDate: Date, billType: BillType, manufacturerName: String, planName: String, mobileNumber: String, mobGbUsed: Int, minute: Int)
 {
     self.manufacturerName = manufacturerName
     self.planName = planName
@@ -41,7 +40,10 @@ public class Mobile: Bill
     
   override func display() {
         print("Manufacturer Name: \(manufacturerName)")
-        print("Manufacturer Name: \(manufacturerName)")
+        print("Plan Name: \(planName)")
+        print("Mobile Number: \(mobileNumber)")
+        print("Minute: \(minute)")
+        print("Mobile Bill: \(mobileBill)")
     
     }
   //Methods to validate mobilenumber, maybe in customer
