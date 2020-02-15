@@ -21,7 +21,7 @@ var in1 = Internet(billId: "IN167", billDate: Date(), billType: BillType.INTERNE
 var in2 = Internet(billId: "IN122", billDate: Date(), billType: BillType.INTERNET, providerName: "STARLIGHT", gbUsed: 6.2)
 
 //Customer Objects
-var c1 = Customer(customerId: "ABHI200", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheks@j35gmail.com", customerBills: ["MB200": m1])
+var c1 = Customer(customerId: "ABHI200", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj@35gmail.com", customerBills: ["MB200": m1])
 var c2 = Customer(customerId: "PEAKY100", firstName: "Thomas", lastName: "Shelby", emailId: "thomas@gmail.com", customerBills: ["MB300": m2, "HY219": h1])
 
 //var billDictionary = [String: Bill]()
@@ -33,12 +33,10 @@ var c2 = Customer(customerId: "PEAKY100", firstName: "Thomas", lastName: "Shelby
 //billDictionary.updateValue(in2, forKey: "IN122")
 //dump(billDictionary)
 
-//c1.newBill(bill: m1, customerId: "ABHI200")
+c1.newBill(bill: in1, customerId: "ABHI200")
+c1.newBill(bill: in2, customerId: "ABHI200")
 //c2.newBill(bill: h2, customerId: "PEAKY100")
 c1.display()
-print("\n")
-print("***************************************************************************************************")
-print("\n")
 c2.display()
 
 var customer = Array<Customer>()
