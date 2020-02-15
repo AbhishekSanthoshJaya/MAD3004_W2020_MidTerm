@@ -21,7 +21,7 @@ public class Customer: IDisplayDelegate
   private var emailId: String
   private var customerBills = [String: Bill]()
 
-    init(customerId: String, firstName: String, lastName: String, emailId: String)
+    init(customerId: String, firstName: String, lastName: String, emailId: String, customerBills: [String: Bill])
   {
         self.customerId = customerId
         self.firstName = firstName
@@ -33,9 +33,10 @@ public class Customer: IDisplayDelegate
         }
           else
         {
-          print("Email address is invalid")
+          print("This email address is invalid: \(emailId)")
           exit(0)
         }
+        self.customerBills = customerBills
   }
     
     //Method to add a new bill to a customer
@@ -77,7 +78,7 @@ public class Customer: IDisplayDelegate
         print("Customer ID: \(customerId)")
         print("Name: \(fullName)")
         print("Email ID: \(emailId)")
-        print("---- Bill Information ----")
+        print("\t---- Bill Information ----")
         for i in customerBills
         {
           i.value.display()

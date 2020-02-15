@@ -24,7 +24,7 @@ public class Mobile: Bill
     self.mobileNumber = mobileNumber
     }
     else{
-      print("Mobile number not valid")
+      print("This mobile number not valid: \(mobileNumber)")
         exit(0)
     }
     self.mobGbUsed = mobGbUsed
@@ -41,11 +41,11 @@ public class Mobile: Bill
     
   override func display() {
         super.display()
-        print("Bill Amount: \(billCalculate())")
-        print("Manufacturer Name: \(manufacturerName)")
-        print("Plan Name: \(planName)")
-        print("MobileData Used: \(mobGbUsed)")
-        print("Minute: \(minute)")
+        print("\tBill Amount: \(billCalculate())")
+        print("\tManufacturer Name: \(manufacturerName)")
+        print("\tPlan Name: \(planName)")
+        print("\tMobileData Used: \(mobGbUsed)")
+        print("\tMinute: \(minute)")
     }
   //Methods to validate mobilenumber, maybe in customer
 }

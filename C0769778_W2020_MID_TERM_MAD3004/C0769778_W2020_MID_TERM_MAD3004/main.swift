@@ -24,17 +24,21 @@ var in2 = Internet(billId: "IN122", billDate: NSDate() as Date, billType: BillTy
 var c1 = Customer(customerId: "ABHI200", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com")
 var c2 = Customer(customerId: "PEAKY100", firstName: "Thomas", lastName: "Shelby", emailId: "thomas@gmail.com")
 
-//var billArray = Array<Bill>()
-//billArray.insert(m1, at: 0)
+var billDictionary = [String: Bill]()
+billDictionary.updateValue(m1, forKey: "MB200")
+billDictionary.updateValue(m2, forKey: "MB300")
+billDictionary.updateValue(h1, forKey: "HY219")
+billDictionary.updateValue(h2, forKey: "HY199")
+billDictionary.updateValue(in1, forKey: "IN167")
+billDictionary.updateValue(in2, forKey: "IN122")
+//dump(billDictionary)
 
-c1.newBill(bill: h2, customerId: "ABHI200")
-c2.newBill(bill: h1, customerId: "PEAKY100")
+c1.newBill(bill: m1, customerId: "ABHI200")
+c2.newBill(bill: h2, customerId: "PEAKY100")
 c1.display()
-
-c2.removeBill(bill: h1)
-
+print("\n")
 print("***************************************************************************************************")
-
+print("\n")
 c2.display()
 // func getCustomerById(customerId: String) -> Customer?
 // {

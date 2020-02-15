@@ -29,15 +29,10 @@ init(billId: String, billDate: Date, billType: BillType)
     }
 
 func display() {
-       print("Bill ID: \(billId)")
-       print("Bill Date: \(billDate)")
-       print("Bill Type: \(billType)")
+       print("\tBill ID: \(billId)")
+       print("\tBill Date: \(billDate)")
+       print("\tBill Type: \(billType)")
        //print("Total Amount to be paid: \(billTotal)")
     }
-    
-//  func calcTotalBill() -> Float
-//  {
-////Function to calculate total bill based on type, could be in customer
-//  }
 
 }
