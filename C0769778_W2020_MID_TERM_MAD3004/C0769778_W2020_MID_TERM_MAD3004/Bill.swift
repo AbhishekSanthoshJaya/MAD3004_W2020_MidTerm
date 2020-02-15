@@ -18,7 +18,7 @@ public class Bill: IDisplayDelegate
   private var billId: String
   private var billDate: Date
   private var billType: BillType
-  //private var billTotal: Double = 0.0
+  private var billTotal: Double?
 
 
 init(billId: String, billDate: Date, billType: BillType)
@@ -29,9 +29,9 @@ init(billId: String, billDate: Date, billType: BillType)
     }
 
 func display() {
-       print("\tBill ID: \(billId)")
-       print("\tBill Date: \(billDate)")
-       print("\tBill Type: \(billType)")
+       print("\tBill ID                 : \(billId)")
+       print("\tBill Date               : \(billDate)")
+       print("\tBill Type               : \(billType)")
        //print("Total Amount to be paid: \(billTotal)")
     }
 

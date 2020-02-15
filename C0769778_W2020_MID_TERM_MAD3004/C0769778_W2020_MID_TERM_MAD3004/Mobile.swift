@@ -41,11 +41,11 @@ public class Mobile: Bill
     
   override func display() {
         super.display()
-        print("\tBill Amount: \(billCalculate())")
-        print("\tManufacturer Name: \(manufacturerName)")
-        print("\tPlan Name: \(planName)")
-        print("\tMobileData Used: \(mobGbUsed)")
-        print("\tMinute: \(minute)")
+        print("\tBill Amount             : \(billCalculate())")
+        print("\tManufacturer Name       : \(manufacturerName)")
+        print("\tPlan Name               : \(planName)")
+        print("\tMobileData Used         : \(mobGbUsed)")
+        print("\tMinute                  : \(minute)")
     }
   //Methods to validate mobilenumber, maybe in customer
 }

@@ -31,8 +31,8 @@ init(billId: String, billDate: Date, billType: BillType, providerName:String, gb
        }
     override func display() {
         super.display()
-        print("\tBill Amount: \(billCalculate())")
-        print("\tProvider Name: \(providerName)")
-        print("\tData (IN GB): \(gbUsed)")
+        print("\tBill Amount        : \(billCalculate())")
+        print("\tProvider Name      : \(providerName)")
+        print("\tData (IN GB)       : \(gbUsed)")
     }
 }

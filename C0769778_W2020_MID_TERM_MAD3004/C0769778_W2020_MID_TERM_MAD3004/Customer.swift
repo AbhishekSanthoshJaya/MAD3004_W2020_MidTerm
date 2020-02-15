@@ -21,7 +21,7 @@ public class Customer: IDisplayDelegate
   private var emailId: String
   private var customerBills = [String: Bill]()
 
-    init(customerId: String, firstName: String, lastName: String, emailId: String, customerBills: [String: Bill])
+    init(customerId: String, firstName: String, lastName: String, emailId: String,customerBills: [String: Bill])
   {
         self.customerId = customerId
         self.firstName = firstName
@@ -75,13 +75,17 @@ public class Customer: IDisplayDelegate
        }
     
     func display(){
-        print("Customer ID: \(customerId)")
-        print("Name: \(fullName)")
-        print("Email ID: \(emailId)")
+        print("Customer ID   : \(customerId)")
+        print("Name          : \(fullName)")
+        print("Email ID      : \(emailId)")
+        print("\n")
         print("\t---- Bill Information ----")
         for i in customerBills
         {
           i.value.display()
+          print("\n")
+          print("\t****************************************************")
+          print("\n")
         }
         //
     }
