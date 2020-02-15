@@ -18,6 +18,7 @@ Mid term test: A program that calculates the total bills of a customer. A bill c
 ## REFERENCES
 
 * [iOSTutorialJunction](https://iostutorialjunction.com/2019/09/get-number-of-days-between-two-dates-swift.html) - Used in days between calculation of insurance class.
-* [Stackoverflow](https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift) - Used in email verification
-* [Medium](https://medium.com/@YogevSitton/use-auto-describing-objects-with-customstringconvertible-49528b55f446) - To display customer object details
-* [NSdateformatter](https://nsdateformatter.com/) - To view different formats
+* [Stackoverflow](https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift) - Used in email verification.
+* [Medium](https://medium.com/@YogevSitton/use-auto-describing-objects-with-customstringconvertible-49528b55f446) - To display customer object details.
+* [NSdateformatter](https://nsdateformatter.com/) - To view different formats.
+* [Nsscreencast](https://nsscreencast.com/episodes/367-dates-and-times) - Used to format dates.
