@@ -15,6 +15,12 @@ Mid term test: A program that calculates the total bills of a customer. A bill c
 
 ## CLASSES USED
 
+### PROTOCOLS: IDISPLAY
+### BILL CLASSES: MOBILE, HYDRO, INTERNET
+### EXTENSIONS: DOUBLE, DATE
+### MAIN CLASSES: BILL, CUSTOMER
+### ADDITIONAL CLASSES: INSURANCE
+
 ## REFERENCES
 
 * [iOSTutorialJunction](https://iostutorialjunction.com/2019/09/get-number-of-days-between-two-dates-swift.html) - Used in days between calculation of insurance class.
@@ -22,3 +28,4 @@ Mid term test: A program that calculates the total bills of a customer. A bill c
 * [Medium](https://medium.com/@YogevSitton/use-auto-describing-objects-with-customstringconvertible-49528b55f446) - To display customer object details.
 * [NSdateformatter](https://nsdateformatter.com/) - To view different formats.
 * [Nsscreencast](https://nsscreencast.com/episodes/367-dates-and-times) - Used to format dates.
+* [Stackoverflow](https://stackoverflow.com/questions/24070450/how-to-get-the-current-time-as-datetime) - Used to input date at object creation
