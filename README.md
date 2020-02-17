@@ -29,3 +29,4 @@ Mid term test: A program that calculates the total bills of a customer. A bill c
 * [NSdateformatter](https://nsdateformatter.com/) - To view different formats.
 * [Nsscreencast](https://nsscreencast.com/episodes/367-dates-and-times) - Used to format dates.
 * [Stackoverflow](https://stackoverflow.com/questions/24070450/how-to-get-the-current-time-as-datetime) - Used to input date at object creation
+* [Stackoverflow](https://stackoverflow.com/questions/24130026/swift-how-to-sort-array-of-custom-objects-by-property-value)- Used in sorting customer array
