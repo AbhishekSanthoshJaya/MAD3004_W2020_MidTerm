@@ -23,7 +23,7 @@ Mid term test: A program that calculates the total bills of a customer. A bill c
 
 ## PROJECT OUTPUTS
 
-**DISPLAYING ALL CUSTOMER INFORMATION
+### DISPLAYING ALL CUSTOMER INFORMATION WITH THEIR BILLS AND TOTAL
 ````
 Customer ID   : ABHI100
 Name          : Abhishek Santhosh Jaya
@@ -113,7 +113,7 @@ Email ID      : therealheisenberg@gmail.com
             TOTAL BILL AMOUNT TO BE PAID: $18.60
     ****************************************************
 ````
-**DISPLAYING INDIVIDUAL CUSTOMERS THROUGH ID: getCustomerById(customerId: "ABHI300")
+### DISPLAYING INDIVIDUAL CUSTOMERS THROUGH ID: getCustomerById(customerId: "ABHI300")
 ````
  ****** GET CUSTOMER BY ID RESULT ******
 
@@ -135,19 +135,19 @@ Email ID      : therealheisenberg@gmail.com
             TOTAL BILL AMOUNT TO BE PAID: $18.60
     ****************************************************
 ````
-**IF A CUSTOMER WITH THE GIVEN ID DOES NOT EXIST: getCustomerById(customerId: "ABHI500")
+### IF A CUSTOMER WITH THE GIVEN ID DOES NOT EXIST: getCustomerById(customerId: "ABHI500")
 ````
 A CUSTOMER WITH THIS ID:(ABHI500) DOES NOT EXIST...
 ````
-**ADDING A BILL THAT IS ALREADY PRESENT: c1.newBill(bill: m1, billId: "MB100")
+### ADDING A BILL THAT IS ALREADY PRESENT: c1.newBill(bill: m1, billId: "MB100")
 ````
 ERROR! THIS BILL HAS ALREADY BEEN ADDED!
 ````
-**REMOVING A BILL THAT DOES NOT EXIST: c1.removeBill(billId: "IN500")
+### REMOVING A BILL THAT DOES NOT EXIST: c1.removeBill(billId: "IN500")
 ````
 CANNOT REMOVE. A BILL WITH THIS ID DOES NOT EXIST! : IN500
 ````
-**FINDING DETAILS OF A BILL THROUGH THE BILL ID: c3.billDetails(billId: "IN200")
+### FINDING DETAILS OF A BILL THROUGH THE BILL ID: c3.billDetails(billId: "IN200")
 ````
 THE DETAILS OF IN200 ARE AS FOLLOWS:
 
@@ -158,14 +158,14 @@ THE DETAILS OF IN200 ARE AS FOLLOWS:
     Provider Name           : STARLIGHT
     Data (IN GB)            : 6.2 GB
 ````
-**EMAIL AND PHONE NUMBER VERIFICATION: EMAIL ID MISSING @, PHONE NUMBER NOT 10 DIGITS
+### EMAIL AND PHONE NUMBER VERIFICATION: EMAIL ID MISSING @, PHONE NUMBER NOT 10 DIGITS
 ````
 THIS EMAIL IS INVALID: therealheisenberggmail.com
 
 THIS MOBILE NUMBER IS NOT VALID: 471029230
 ````
 
-**SORTING CUSTOMERS IN DECREASING ORDER OF BILL TOTAL:
+### SORTING CUSTOMERS IN DECREASING ORDER OF BILL TOTAL:
 ````
 Customer ID   : ABHI200
 Name          : Thomas Shelby
