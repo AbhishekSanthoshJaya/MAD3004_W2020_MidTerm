@@ -9,16 +9,16 @@
 import Foundation
 
 enum BillType {
-    case MOBILE, INTERNET, HYDRO
+    case MOBILE, INTERNET, HYDRO, INSURANCE
 }
 
 public class Bill: IDisplayDelegate
     
 {
-  private var billId: String
+  var billId: String
   private var billDate: Date
   private var billType: BillType
-  private var billTotal: Double?
+  var billTotal: Double = 0.0
 
 
 init(billId: String, billDate: Date, billType: BillType)
@@ -28,11 +28,10 @@ init(billId: String, billDate: Date, billType: BillType)
     self.billDate = billDate
     }
 
+// ------- METHOD TO DISPLAY BILL DETAILS -------
 func display() {
        print("\tBill ID                 : \(billId)")
-       print("\tBill Date               : \(billDate)")
+       print("\tBill Date               : \(billDate.getFormattedDate())")
        print("\tBill Type               : \(billType)")
-       //print("Total Amount to be paid: \(billTotal)")
     }
-
 }
