@@ -70,7 +70,7 @@ func displayAll(){
     i.display()
   }
 }
-//displayAll()
+displayAll()
 
 //------- METHOD TO GET INDIVIDUAL CUSTOMERS THROUGH ID -------
 func getCustomerById(customerId: String)
@@ -89,7 +89,7 @@ for i in customers
     print("\nA CUSTOMER WITH THIS ID:(\(customerId)) DOES NOT EXIST...")
   }
 }
-getCustomerById(customerId: "ABHI300")
+//getCustomerById(customerId: "ABHI100")
 
 //------- ATTEMPTING TO FIND A CUSTOMER USING AN INVALID ID -------
 //getCustomerById(customerId: "ABHI500")
