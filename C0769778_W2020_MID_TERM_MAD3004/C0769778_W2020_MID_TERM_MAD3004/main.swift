@@ -32,20 +32,15 @@ var c1 = Customer(customerId: "ABHI100", firstName: "Abhishek", lastName: "Santh
 var c2 = Customer(customerId: "ABHI200", firstName: "Thomas", lastName: "Shelby", emailId: "peakyblinders@gmail.com")
 var c3 = Customer(customerId: "ABHI300", firstName: "Walter", lastName: "White", emailId: "therealheisenberg@gmail.com")
 
-//var billDictionary = [String: Bill]()
-//billDictionary.updateValue(m1, forKey: "MB200")
-//billDictionary.updateValue(m2, forKey: "MB300")
-//billDictionary.updateValue(h1, forKey: "HY219")
-//billDictionary.updateValue(h2, forKey: "HY199")
-//billDictionary.updateValue(in1, forKey: "IN167")
-//billDictionary.updateValue(in2, forKey: "IN122")
-//dump(billDictionary)
+//------- ADDING BILLS TO CUSTOMER BILL DICTIONARY -------
+c1.newBill(bill: m1, billId: "MB100")
+c1.newBill(bill: in1, billId: "IN100")
+c2.newBill(bill: m2, billId: "MB200")
+c2.newBill(bill: h1, billId: "HY100")
+c2.newBill(bill: insurance1, billId: "INSUR100")
+c3.newBill(bill: in2, billId: "IN200")
 
-c1.newBill(bill: in1, customerId: "ABHI200")
-c1.newBill(bill: in2, customerId: "ABHI200")
-//c2.newBill(bill: h2, customerId: "PEAKY100")
-c1.display()
-c2.display()
+
 
 var customer = Array<Customer>()
 //func getCustomerById(customerId: String) -> Customer?
