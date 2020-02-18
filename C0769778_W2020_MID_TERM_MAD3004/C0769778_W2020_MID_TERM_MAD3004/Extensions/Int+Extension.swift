@@ -16,7 +16,7 @@ func addMobGB() -> String
   return "\(self) GB"
   }
 
-  func addMins() -> String
+func addMins() -> String
   {
   return "\(self) MINS"
   }

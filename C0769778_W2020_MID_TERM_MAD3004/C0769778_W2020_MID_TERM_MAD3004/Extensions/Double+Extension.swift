@@ -10,17 +10,20 @@ import Foundation
 
 extension Double{
     
-func currency() -> String{
-        let s = String.init(format: "$%.2f", self)
-        return s
-    }
-    func addGB() -> String
-    {
+func currency() -> String
+  {
+    let s = String.init(format: "$%.2f", self)
+    return s
+  }
+    
+func addGB() -> String
+  {
     return "\(self) GB"
-    }
+  }
 
-    func addUnits() -> String
-      {
-      return "\(self) Units"
-      }
+func addUnits() -> String
+  {
+  return "\(self) Units"
+  }
+    
 }
