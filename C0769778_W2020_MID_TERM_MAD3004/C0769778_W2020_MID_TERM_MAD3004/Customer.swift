@@ -38,15 +38,38 @@ public class Customer: IDisplayDelegate
         }
   }
     
-    //Method to add a new bill to a customer
-    func newBill(bill: Bill, customerId: String)
+    //------- METHOD TO ADD A NEW BILL TO A CUSTOMER -------
+    func newBill(bill: Bill, billId: String)
     {
-      customerBills.updateValue(bill, forKey: customerId)
+      if customerBills.keys.contains(billId)
+      {
+        print("\nERROR! THIS BILL HAS ALREADY BEEN ADDED!")
+      }
+
+      else
+      {
+        customerBills.updateValue(bill, forKey: billId)
+      }
+      
     }
-    
-    func removeBill(bill: Bill)
+
+     //------- METHOD TO REMOVE A BILL FROM A CUSTOMER -------
+    func removeBill(billId: String)
     {
-        customerBills.removeValue(forKey: customerId)
+      var checkFlag = 0
+        for i in customerBills
+        {
+          if(billId == i.value.billId)
+          {
+              checkFlag = 1
+              customerBills.removeValue(forKey: billId)
+          }
+        }
+          if(checkFlag == 0)
+          {
+            print("CANNOT REMOVE. A BILL WITH THIS ID DOES NOT EXIST! : \(billId)")
+          }
+        
     }
     
     //Method to validate Email address
