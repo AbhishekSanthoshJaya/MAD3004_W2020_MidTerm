@@ -52,9 +52,9 @@ c3.newBill(bill: in2, billId: "IN200")
 // c3.removeBill(billId: "IN200")
 // c3.display()
 
-var customer = Array<Customer>()
-//func getCustomerById(customerId: String) -> Customer?
-//{
-//
-//}
+//------- ARRAY OF CUSTOMERS AND ADDING CUSTOMER OBJECTS -------
+var customers = Array<Customer>()
+customers.append(c1)
+customers.append(c2)
+customers.append(c3)
 
