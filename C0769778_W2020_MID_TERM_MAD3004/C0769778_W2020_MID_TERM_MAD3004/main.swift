@@ -19,9 +19,9 @@ var m2 = Mobile(billId: "MB200", billDate: formatter.date(from: "2019/06/18")!, 
 var h1 = Hydro(billId: "HY100", billDate: formatter.date(from: "2019/09/12")!, billType: BillType.HYDRO, agencyName: "PUREWATA", unitsUsed: 22.21)
 var h2 = Hydro(billId: "HY200", billDate: formatter.date(from: "2019/05/15")!, billType: BillType.HYDRO, agencyName: "LIFELINE", unitsUsed: 8.2)
 
-//Internet Objects
-var in1 = Internet(billId: "IN167", billDate: Date(), billType: BillType.INTERNET, providerName: "SKYLINK", gbUsed: 2.2)
-var in2 = Internet(billId: "IN122", billDate: Date(), billType: BillType.INTERNET, providerName: "STARLIGHT", gbUsed: 6.2)
+//-------INTERNET OBJECTS-------
+var in1 = Internet(billId: "IN100", billDate: formatter.date(from: "2019/09/20")!, billType: BillType.INTERNET, providerName: "SKYLINK", gbUsed: 22.8)
+var in2 = Internet(billId: "IN200", billDate: formatter.date(from: "2019/10/12")!, billType: BillType.INTERNET, providerName: "STARLIGHT", gbUsed: 6.2)
 
 //Customer Objects
 var c1 = Customer(customerId: "ABHI200", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj@35gmail.com", customerBills: ["MB200": m1])
