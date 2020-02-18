@@ -69,7 +69,7 @@ func displayAll(){
     i.display()
   }
 }
-//displayAll()
+displayAll()
 
 //------- METHOD TO GET INDIVIDUAL CUSTOMERS THROUGH ID -------
 func getCustomerById(customerId: String)

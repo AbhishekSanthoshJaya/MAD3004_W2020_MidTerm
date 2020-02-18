@@ -77,19 +77,51 @@
 		9B289BD123F609A40008FD4D /* C0769778_W2020_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
-				9B289BD923F609D00008FD4D /* IDisplay.swift */,
-				9B7ED70D23FC85720013416C /* Date+Extension.swift */,
-				9B7ED70F23FC85DA0013416C /* Int+Extension.swift */,
-				9B1A4B5D23F76C63001AC475 /* Double+Extension.swift */,
 				9B289BD223F609A40008FD4D /* main.swift */,
 				9BF0E0B523F60E05004B6122 /* Customer.swift */,
-				9BF0E0AD23F60B7F004B6122 /* Internet.swift */,
-				9BF0E0B123F60C93004B6122 /* Hydro.swift */,
-				9BF0E0B323F60D07004B6122 /* Mobile.swift */,
-				9BF0E0B723F60E44004B6122 /* Insurance.swift */,
-				9BF0E0AF23F60BC2004B6122 /* Bill.swift */,
+				9B7ED71323FC86960013416C /* Protocol */,
+				9B7ED71223FC86780013416C /* Bill Classes */,
+				9B7ED71423FC86D20013416C /* Bonus Class */,
+				9B7ED71123FC86500013416C /* Extensions */,
 			);
 			path = C0769778_W2020_MID_TERM_MAD3004;
+			sourceTree = "<group>";
+		};
+		9B7ED71123FC86500013416C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A4B5D23F76C63001AC475 /* Double+Extension.swift */,
+				9B7ED70D23FC85720013416C /* Date+Extension.swift */,
+				9B7ED70F23FC85DA0013416C /* Int+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B7ED71223FC86780013416C /* Bill Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9BF0E0AD23F60B7F004B6122 /* Internet.swift */,
+				9BF0E0B323F60D07004B6122 /* Mobile.swift */,
+				9BF0E0B123F60C93004B6122 /* Hydro.swift */,
+				9BF0E0AF23F60BC2004B6122 /* Bill.swift */,
+			);
+			path = "Bill Classes";
+			sourceTree = "<group>";
+		};
+		9B7ED71323FC86960013416C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9B289BD923F609D00008FD4D /* IDisplay.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9B7ED71423FC86D20013416C /* Bonus Class */ = {
+			isa = PBXGroup;
+			children = (
+				9BF0E0B723F60E44004B6122 /* Insurance.swift */,
+			);
+			path = "Bonus Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
