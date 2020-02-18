@@ -127,20 +127,27 @@ public class Customer: IDisplayDelegate
            return  returnValue
        }
     
-    func display(){
-        print("Customer ID   : \(customerId)")
-        print("Name          : \(fullName)")
-        print("Email ID      : \(emailId)")
-        print("\n")
-        print("\t---- Bill Information ----")
-        for i in customerBills
-        {
-          i.value.display()
-          print("\n")
-          print("\t****************************************************")
-          print("\n")
+        func display(){
+          if customerBills.isEmpty
+          {
+            print("\n---- NO BILLS AGAINST \(customerId): \(fullName) ----\n")
+          }
+          else
+          {
+            print("\nCustomer ID   : \(customerId)")
+            print("Name          : \(fullName)")
+            print("Email ID      : \(emailId)")
+            print("\n")
+            print("\t\t\t\t---- BILL INFORMATION ----\n")
+            for i in customerBills
+            {
+              i.value.display()
+              print("\n \t****************************************************")
+            }
+            print("\t\t\tTOTAL BILL AMOUNT TO BE PAID: \(allBillsTotal().currency())")
+            print("\t****************************************************\n")
+            //
+          }
         }
-        //
-    }
 
 }
