@@ -20,34 +20,37 @@ public class Mobile: Bill
 {
     self.manufacturerName = manufacturerName
     self.planName = planName
-    if(mobileNumber.count == 10) {
+    if(mobileNumber.count == 10)
+      {
     self.mobileNumber = mobileNumber
-    }
-    else{
-      print("This mobile number not valid: \(mobileNumber)")
-        exit(0)
-    }
+      }
+    else
+      {
+      print("\nTHIS MOBILE NUMBER IS NOT VALID: \(mobileNumber)")
+      exit(0)
+      }
     self.mobGbUsed = mobGbUsed
     self.minute = minute
     super.init(billId: billId, billDate: billDate, billType: billType)
+    self.billTotal = billCalculate()
   }
 
-//Method to get total Mobile bill
-    func billCalculate() -> Double{
-        var billAmount = 0.0
-        billAmount = (Double(self.mobGbUsed) * 25) + (Double(self.minute) * 0.2)
-        return billAmount
+//------- METHOD TO CALCULATE TOTAL MOBILE BILL -------
+    func billCalculate() -> Double
+    {
+      var billAmount = 0.0
+      billAmount = (Double(self.mobGbUsed) * 25) + (Double(self.minute) * 0.2)
+      return billAmount
     }
-    
+
+//------- DISPLAYING BILL DETAILS -------
   override func display() {
         super.display()
-        print("\tBill Amount             : \(billCalculate())")
+        print("\tBill Amount             : \(billTotal.currency())")
         print("\tManufacturer Name       : \(manufacturerName)")
         print("\tPlan Name               : \(planName)")
-        print("\tMobileData Used         : \(mobGbUsed)")
-        print("\tMinute                  : \(minute)")
+        print("\tMobile Data Used        : \(mobGbUsed.addMobGB())")
+        print("\tMinutes Used            : \(minute.addMins())")
     }
-  //Methods to validate mobilenumber, maybe in customer
 }
-
 
