@@ -71,8 +71,23 @@ func displayAll(){
 }
 //displayAll()
 
-
-
+//------- METHOD TO GET INDIVIDUAL CUSTOMERS THROUGH ID -------
+func getCustomerById(customerId: String)
+{
+var checkFlag = 0
+for i in customers
+  {
+    if (customerId == i.customerId)
+      {
+      print("\n\t\t\t****** GET CUSTOMER BY ID RESULT ******")
+      checkFlag = 1
+      i.display()
+      }
+  }
+  if (checkFlag == 0){
+    print("\nA CUSTOMER WITH THIS ID:(\(customerId)) DOES NOT EXIST...")
+  }
+}
 
 
 
