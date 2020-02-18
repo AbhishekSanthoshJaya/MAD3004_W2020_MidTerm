@@ -88,6 +88,17 @@ for i in customers
     print("\nA CUSTOMER WITH THIS ID:(\(customerId)) DOES NOT EXIST...")
   }
 }
+//getCustomerById(customerId: "ABHI300")
 
+//------- ATTEMPTING TO FIND A CUSTOMER USING AN INVALID ID -------
+//getCustomerById(customerId: "ABHI500")
 
-
+//------- METHOD TO DISPLAY CUSTOMERS IN DECREASING ORDER OF BILL TOTAL -------
+func sortedDisplay(){
+let sortedCustomers = customers.sorted(by:{ $0.allBillsTotal() > $1.allBillsTotal()})
+for i in sortedCustomers
+  {
+    i.display()
+  }
+}
+//sortedDisplay()
