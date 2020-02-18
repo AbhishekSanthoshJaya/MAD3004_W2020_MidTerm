@@ -50,7 +50,7 @@ c3.newBill(bill: in2, billId: "IN200")
 //------- REMOVING BILLS FROM A CUSTOMER -------
 // c1.removeBill(billId: "IN500")
 // c3.removeBill(billId: "IN200")
-// c3.display()
+//c3.display()
 
 //------- DISPLAYING THE DETAILS OF A PARTICULAR BILL -------
 // c3.billDetails(billId: "IN200")
@@ -69,7 +69,7 @@ func displayAll(){
     i.display()
   }
 }
-displayAll()
+//displayAll()
 
 //------- METHOD TO GET INDIVIDUAL CUSTOMERS THROUGH ID -------
 func getCustomerById(customerId: String)
@@ -88,7 +88,7 @@ for i in customers
     print("\nA CUSTOMER WITH THIS ID:(\(customerId)) DOES NOT EXIST...")
   }
 }
-//getCustomerById(customerId: "ABHI300")
+getCustomerById(customerId: "ABHI300")
 
 //------- ATTEMPTING TO FIND A CUSTOMER USING AN INVALID ID -------
 //getCustomerById(customerId: "ABHI500")
