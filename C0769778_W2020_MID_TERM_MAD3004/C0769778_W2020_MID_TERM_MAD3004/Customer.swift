@@ -72,6 +72,16 @@ public class Customer: IDisplayDelegate
         
     }
     
+    //------- METHOD TO FIND SUM OF ALL BILLS OF A CUSTOMER -------
+    func allBillsTotal() -> Double
+    {
+      var allTotal2 = 0.0
+      for i in customerBills{
+        allTotal2 += i.value.billTotal
+      }
+      return allTotal2
+    }
+    
     //------- METHOD TO FIND BILL DETAILS WITH BILL ID -------
     func billDetails(billId: String)
     {
@@ -91,7 +101,9 @@ public class Customer: IDisplayDelegate
        }
     }
     
-    //Method to validate Email address
+    
+    
+    //------- METHOD TO VALIDATE EMAIL ADDRESS -------
        func isValidEmailAddress(emailAddressString: String) -> Bool {
            
            var returnValue = true
