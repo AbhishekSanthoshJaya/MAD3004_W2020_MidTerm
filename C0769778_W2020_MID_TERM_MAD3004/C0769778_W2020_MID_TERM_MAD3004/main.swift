@@ -40,7 +40,17 @@ c2.newBill(bill: h1, billId: "HY100")
 c2.newBill(bill: insurance1, billId: "INSUR100")
 c3.newBill(bill: in2, billId: "IN200")
 
+//------- ADDING A BILL THAT IS ALREADY PRESENT -------
+// c1.newBill(bill: m1, billId: "MB100")
 
+// c3.newBill(bill: insurance2, billId: "INSUR200")
+// c3.newBill(bill: h2, billId: "HY200")
+
+
+//------- REMOVING BILLS FROM A CUSTOMER -------
+// c1.removeBill(billId: "IN500")
+// c3.removeBill(billId: "IN200")
+// c3.display()
 
 var customer = Array<Customer>()
 //func getCustomerById(customerId: String) -> Customer?
