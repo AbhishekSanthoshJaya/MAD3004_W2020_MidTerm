@@ -72,6 +72,25 @@ public class Customer: IDisplayDelegate
         
     }
     
+    //------- METHOD TO FIND BILL DETAILS WITH BILL ID -------
+    func billDetails(billId: String)
+    {
+      var checkFlag = 0
+      for i in customerBills
+       {
+        if (billId == i.value.billId)
+         {
+            checkFlag = 1
+            print("\n *THE DETAILS OF \(billId) ARE AS FOLLOWS: \n")
+            i.value.display()
+         }
+       }
+       if(checkFlag == 0)
+       {
+         print("\nNO BILL EXITS WITH GIVEN INDEX: \(billId)")
+       }
+    }
+    
     //Method to validate Email address
        func isValidEmailAddress(emailAddressString: String) -> Bool {
            
