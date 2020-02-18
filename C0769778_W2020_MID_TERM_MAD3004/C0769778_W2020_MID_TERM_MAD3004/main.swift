@@ -52,9 +52,16 @@ c3.newBill(bill: in2, billId: "IN200")
 // c3.removeBill(billId: "IN200")
 // c3.display()
 
+//------- DISPLAYING THE DETAILS OF A PARTICULAR BILL -------
+// c3.billDetails(billId: "IN200")
+// c2.billDetails(billId: "IN100")
+
 //------- ARRAY OF CUSTOMERS AND ADDING CUSTOMER OBJECTS -------
 var customers = Array<Customer>()
 customers.append(c1)
 customers.append(c2)
 customers.append(c3)
+
+
+
 
