@@ -11,29 +11,36 @@ import Foundation
 public class Hydro: Bill
   {
   private var agencyName: String = ""
-    private var unitsUsed: Double = 0.0
+  private var unitsUsed: Double = 0.0
 
     init(billId: String, billDate: Date, billType: BillType, agencyName:String, unitsUsed: Double)
   {
-    super.init(billId: billId, billDate: billDate, billType: billType)
     self.agencyName = agencyName
     self.unitsUsed = unitsUsed
+    super.init(billId: billId, billDate: billDate, billType: billType)
+    self.billTotal = billCalculate()
   }
-    func billCalculate() -> Double{
+
+  //------- METHOD TO CALCULATE TOTAL HYDRO BILL -------
+    func billCalculate() -> Double
+    {
            var billAmount = 0.0
-        if( unitsUsed < 10){
+        if (unitsUsed < 10)
+        {
             billAmount = 1.5 * unitsUsed
         }
-        else {
+        else
+        {
             billAmount = 2 * unitsUsed
         }
-           return billAmount
-       }
+    return billAmount
+    }
+
+  //------- METHOD TO DISPLAY BILL DETAILS -------
     override func display() {
         super.display()
-        print("\tBill Amount             : \(billCalculate())")
+        print("\tBill Amount             : \(billTotal.currency())")
         print("\tAgency Name             : \(agencyName)")
-        print("\tUnits consumed          : \(unitsUsed)")
+        print("\tUnits Consumed          : \(unitsUsed.addUnits())")
     }
-    
 }
