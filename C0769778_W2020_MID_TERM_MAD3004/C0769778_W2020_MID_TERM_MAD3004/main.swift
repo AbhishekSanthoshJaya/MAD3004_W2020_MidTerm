@@ -62,6 +62,17 @@ customers.append(c1)
 customers.append(c2)
 customers.append(c3)
 
+//------- DISPLAYING ALL CUSTOMERS AND THEIR BILL INFORMATION -------
+func displayAll(){
+  for i in customers
+  {
+    i.display()
+  }
+}
+//displayAll()
+
+
+
 
 
 
