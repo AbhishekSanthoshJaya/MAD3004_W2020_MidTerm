@@ -17,8 +17,10 @@ init(billId: String, billDate: Date, billType: BillType, providerName:String, gb
     self.providerName = providerName
     self.gbUsed = gbUsed
     super.init(billId: billId, billDate: billDate, billType: billType)
+    self.billTotal = billCalculate()
   }
     
+  //------- METHOD TO CALCULATE TOTAL INTERNET BILL -------
     func billCalculate() -> Double{
            var billAmount = 0.0
         if( gbUsed < 10){
@@ -29,10 +31,12 @@ init(billId: String, billDate: Date, billType: BillType, providerName:String, gb
         }
            return billAmount
        }
+
+  //------- METHOD TO DISPLAY BILL DETAILS -------
     override func display() {
         super.display()
-        print("\tBill Amount        : \(billCalculate())")
-        print("\tProvider Name      : \(providerName)")
-        print("\tData (IN GB)       : \(gbUsed)")
+        print("\tBill Amount             : \(billTotal.currency())")
+        print("\tProvider Name           : \(providerName)")
+        print("\tData (IN GB)            : \(gbUsed.addGB())")
     }
 }

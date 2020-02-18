@@ -19,9 +19,9 @@ public class Customer: IDisplayDelegate
     return "\(firstName) \(lastName)"
     }
   private var emailId: String
-  private var customerBills = [String: Bill]()
+  private lazy var customerBills = [String: Bill]()
 
-    init(customerId: String, firstName: String, lastName: String, emailId: String,customerBills: [String: Bill])
+    init(customerId: String, firstName: String, lastName: String, emailId: String)
   {
         self.customerId = customerId
         self.firstName = firstName
@@ -33,10 +33,9 @@ public class Customer: IDisplayDelegate
         }
           else
         {
-          print("This email address is invalid: \(emailId)")
+          print("\nTHIS EMAIL IS INVALID: \(emailId)")
           exit(0)
         }
-        self.customerBills = customerBills
   }
     
     //Method to add a new bill to a customer
