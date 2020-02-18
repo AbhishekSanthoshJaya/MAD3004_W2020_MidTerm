@@ -26,9 +26,11 @@ var in2 = Internet(billId: "IN200", billDate: formatter.date(from: "2019/10/12")
 //-------- INSURANCE OBJECTS -------
 var insurance1 = Insurance(billId: "INSUR100", billDate: formatter.date(from: "2019/08/11")!, billType: BillType.INSURANCE, insuranceProviderName: "HAPPY INC", typeofInsurance: "HOME", startDate: formatter.date(from: "2019/03/15")!, endDate: formatter.date(from: "2020/03/14")!)
 var insurance2 = Insurance(billId: "INSUR200", billDate: formatter.date(from: "2019/10/12")!, billType: BillType.INSURANCE, insuranceProviderName: "Live Long Providers", typeofInsurance: "HEALTH", startDate: formatter.date(from: "2020/05/22")!, endDate: formatter.date(from: "2022/05/21")!)
-//Customer Objects
-var c1 = Customer(customerId: "ABHI200", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj@35gmail.com", customerBills: ["MB200": m1])
-var c2 = Customer(customerId: "PEAKY100", firstName: "Thomas", lastName: "Shelby", emailId: "thomas@gmail.com", customerBills: ["MB300": m2, "HY219": h1])
+
+//------- CUSTOMER OBJECTS -------
+var c1 = Customer(customerId: "ABHI100", firstName: "Abhishek", lastName: "Santhosh Jaya", emailId: "abhisheksj35@gmail.com")
+var c2 = Customer(customerId: "ABHI200", firstName: "Thomas", lastName: "Shelby", emailId: "peakyblinders@gmail.com")
+var c3 = Customer(customerId: "ABHI300", firstName: "Walter", lastName: "White", emailId: "therealheisenberg@gmail.com")
 
 //var billDictionary = [String: Bill]()
 //billDictionary.updateValue(m1, forKey: "MB200")
